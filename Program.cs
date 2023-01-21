@@ -6,20 +6,17 @@ namespace ModeAnalyzerAssignment
     {
         public static void Main(string[] args)
         {
-            string message;
-            Random random = new Random();
-            int mood = random.Next(2);
+            string message = "I am in Sad Mood";
+            MoodAnalyzer moodAnalyzer1 = new MoodAnalyzer();
+            
 
-            if (mood == 1)
-            {
-                message = "Happy";
-            }
-            else
-            {
-                message = "Sad";
+            MoodAnalyser moodAnalyser = new MoodAnalyser();
+            string r2 = moodAnalyser.analyseMood1();
 
-            }
-            Console.WriteLine(MoodAnalyzer.analyseMood(message));
+            string r1 = moodAnalyser.msg;
+            Console.WriteLine(r2);
+
+            Console.WriteLine(r1);
         }
 
 
